@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+body {
+    background-color: #131316;
+    font-family: 'Poppins';
+    font-size: 2.5em;
+    color: whitesmoke;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure {
+    display: grid;
+    grid-template: 1fr / 1fr "stack";
+}
+
+figure > * {
+    grid-area: stack;
+}
+
+figure > img {
+    width: 30rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+figure > figcaption {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 400ms, visibility 0ms 400ms;
+}
+
+figure:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 400ms;
+}

@@ -1,0 +1,147 @@
+/* css file for websites homepage*/
+
+:root {
+  /* --bg-color: #F9F5EB; */
+  --bg-color: #e7dcd7;
+  --color: #341442;
+  --color-sub: #3e184e;
+  --font-size: 2.5vw;
+  /* --btn-bg: #86cef9; */
+  --btn-bg: #183153;
+  --btn-clr: #341442;
+}
+
+* {
+  font-family: "Ubuntu";
+  font-weight: 800;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--bg-color);
+  /* background-image: url('img2.jpeg'); */
+  color: var(--color);
+  margin: 0px;
+}
+
+.container {
+  font-size: var(--font-size);
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 95vw;
+  margin: 0 0 0vh 0;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+img {
+  height: 50vh;
+  width: 90vw;
+}
+
+.hcontainer {
+  font-weight: 600;
+  height: auto;
+  width: 50vw;
+  position: relative;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70vw;
+}
+
+h6 {
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: var(--color-sub);
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+button {
+  color: white;
+  background: var(--btn-bg);
+  font-size: 1.3vw;
+  padding: 1.5vw 3.2vw;
+  z-index: 50000;
+  border-radius: 17px;
+  transition: ease 400ms;
+  border: none;
+  margin: -5vh 0 0 0;
+  /* box shadow */
+  box-shadow: 0px 0px 18.8px rgba(0, 0, 0, 0.013),
+  0px 0px 29.6px rgba(0, 0, 0, 0.025), 0px 0px 35.7px rgba(0, 0, 0, 0.034),
+  0px 0px 39.8px rgba(0, 0, 0, 0.041), 0px 0px 46.6px rgba(0, 0, 0, 0.05),
+  0px 0px 80px rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+  color: var(--btn-bg);
+  background-color: white;
+  z-index: 30000;
+}
+
+img {
+  z-index: 100;
+  height: auto;
+  width: 87 vw;
+  position: relative;
+  bottom: -6vh;
+}
+
+.bg-img {
+  position: absolute;
+  left: -5.5vw;
+  top: 0vh;
+  z-index: -10;
+  height: auto;
+  width: 110vw;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.blue-line {
+  position: absolute;
+  left: -7.4vw;
+  top: -16.9vh;
+  z-index: -4;
+  height: auto;
+  width: 115%;
+}
+
+.green-dots {
+  position: absolute;
+  z-index: -2;
+  height: 43vh;
+  width: 25vw;
+  top: 2.3vw;
+  left: 34vw;
+}
+
+.yellow-lines {
+  z-index: -6;
+  position: absolute;
+  top: -6.5vw;
+  left: -1.1vw;
+  height: auto;
+  width: 100vw;
+}

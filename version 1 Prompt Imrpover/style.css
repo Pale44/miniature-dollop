@@ -1,0 +1,140 @@
+/* css file for websites homepage*/
+
+:root {
+  /* --bg-color: #F9F5EB; */
+  --bg-color: #E7DCD7;
+  --color: #341442;
+  --color-sub: #3e184e;
+  --font-size: 2.8vw;
+  --btn-bg: #86CEF9;
+  --btn-clr: #341442;
+}
+
+* {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--bg-color);
+    /* background-image: url('img2.jpeg'); */ 
+    background-image: url();
+    color: var(--color);
+}
+
+.navbar {
+  width: 100vw;
+  height: 9vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+ }
+
+.container {
+  font-size: var(--font-size);
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 50vw;
+  z-index: 30000;
+}
+
+.imgContainer {
+  position: absolute;
+  left: 76%;
+  top: 69%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  height: auto;
+  width: 65vw;
+}
+
+.logo {
+  height: auto;
+  width: 30vw;
+  position: absolute;
+  top: 2.7vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+.navBtn {
+  color: var(--btn-clr);
+  background: var(--btn-bg);
+  font-size: 1.2vw;
+  height: auto;
+  width: 13vw;
+  padding: 1vw 2.2vw;
+  border-radius: 17px;
+  transition: ease 400ms;
+  border: none;
+}
+
+.navBtn:hover {
+  background-color: var(--bg-color);
+}
+
+.logoBtnContainer {
+  position: absolute;
+  top: 0.5vh;
+  right: 1.5vw;
+}
+
+.line {
+  z-index: -1;
+  width: auto;
+  height: 90vh;
+  position: absolute;
+  top: 0vh;
+  left: -10vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hcontainer {
+  height: auto;
+  width: 42vw;
+  z-index: 230000;
+}
+
+h6 {
+  font-size: 1.3vw;
+  margin: -0.9vh 0 0 0 ;
+  color: var(--color-sub);
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+button { 
+  color: var(--btn-clr);
+  background: var(--btn-bg);
+  font-size: 1.4vw;
+  padding: 1.2vw 3.4vw;
+  border-radius: 17px;
+  transition: ease 400ms;
+  border: none;
+  margin: 9.5% 0 0 1%;
+  box-shadow: 0px 0px 18.8px rgba(0, 0, 0, 0.013),
+    0px 0px 29.6px rgba(0, 0, 0, 0.025), 0px 0px 35.7px rgba(0, 0, 0, 0.034),
+    0px 0px 39.8px rgba(0, 0, 0, 0.041), 0px 0px 46.6px rgba(0, 0, 0, 0.05),
+    0px 0px 80px rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+  background-color: white;
+}

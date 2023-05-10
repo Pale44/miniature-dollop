@@ -1,0 +1,75 @@
+/* css file for websites homepage*/
+
+:root {
+  --bg-color: #F9F5EB;
+  --color: #1C3879;
+  --color-sub: #264ba1;
+  --font-size: 2.45vw;
+  --btn-bg: #607EAA;
+  --btn-clr: #EAE3D2;
+}
+
+* {
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--bg-color);
+    background-image: url('img2.jpeg'); 
+    color: var(--color);
+}
+
+.container {
+  font-size: var(--font-size);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+h6 {
+  font-size: 2.3vw;
+  margin: -1vh 0 0 0 ;
+  color: var(--color-sub);
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+button {
+    color: var(--btn-bg);
+    background: var(--btn-bg);
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 3.5vw;
+    margin: 12vh 0 0 0;
+  }
+  
+  button::before {
+    margin-left: auto;
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--btn-bg);
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
